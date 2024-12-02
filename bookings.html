@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+</head>
+<body>
+    <header>
+        <h1>Book a Service</h1>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header, footer {
+                background: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+            #navbar{
+            background-color: black;
+        }
+        nav {
+            background: #444444;
+            overflow: hidden;
+        }
+            nav a {
+                float: left;
+                display: block;
+                color:lightcoral;
+                text-align: center;
+                padding: 10px 15px;
+                text-decoration: none;
+            }
+            nav a:hover {
+                background: #555;
+            }
+            form {
+                width: 50%;
+                margin: auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px #ccc;
+                margin-top: 20px;
+            }
+            input, select {
+                width: calc(100% - 20px);
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            button {
+                background: #333;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            h2{
+                text-align: center;
+            }
+            footer {
+            background: #333333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        </style>
+    </header>
+    <nav id="navbar">
+        <a href="./index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="services.html">Services</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <h2>Reserve Your Spot</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <select name="service" required>
+                <option value="">Select a Service</option>
+                <option value="book_rental">Book Rental</option>
+                <option value="study_room">Study Room</option>
+                <option value="reading_program">Reading Program</option>
+                <option value="digital_resources">Digital Resources</option>
+            </select>
+            <input type="date" name="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 Online Library Services
+    </footer>
+</body>
+</html>
